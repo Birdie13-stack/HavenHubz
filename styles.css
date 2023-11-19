@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --main-blue: #2e86ab;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* styles for the header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header img {
+  width: 120px;
+}
+
+nav {
+  display: flex; /* Making the nav-list appear horizontal */
+  margin-right: 40px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #9f9c9c;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #2e86ab;
+  text-decoration: overline;
+}
+
+.signup {
+  background-color: #3cacdc;
+  padding: 15px 30px;
+  border-radius: 20px;
+  margin-left: 130px;
+  border: none;
+  margin-top: -40px;
+}
+
+.title-section {
+  width: 90%;
+  padding: 20px;
+  position: relative;
+  /* margin-left: 40px; */
+  height: 100vh;
+  margin: 20px auto;
+}
+.blue-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #2e86ab;
+  height: 600px;
+  padding: 30px 40px 30px 20px;
+  color: white;
+  width: 43%;
+  border-radius: 10px;
+}
+
+.blue-box h1 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 3rem;
+  font-weight: 700;
+  /* width: 600px; */
+  margin-bottom: 50px;
+}
+
+.desc {
+  width: 380px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.main-img {
+  position: absolute;
+  top: 0;
+  left: 500px;
+  z-index: 1;
+  width: 60%;
+  margin-top: 50px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.services {
+  background-color: black;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 20px;
+  /* margin-left: 70px; */
+}
+
+.services h2 {
+  color: #2e86ab;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.service-text {
+  color: white;
+  width: 80%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.service-img {
+  width: 100%;
+  /* height: 872px; */
+}
+
+.service-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 95%;
+  margin: 20px auto;
+}
+
+.service {
+  background-color: white;
+  margin-bottom: 20px;
+  width: 90%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.why > h2 {
+  margin-top: 50px;
+  margin-left: 70px;
+  color: #2e86ab;
+  font-size: 1.8rem;
+}
+
+.reasons {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px auto 40px auto;
+}
+
+.reason {
+  background-color: #2e86ab;
+  color: white;
+  padding: 10px;
+  width: 23%;
+  border-radius: 20px;
+}
+
+.reason h3 {
+  /* color: #2e86ab; */
+}
+.reason-text {
+  width: 250px;
+  color: white;
+  font-weight: 400;
+}
+
+.popular-listings {
+  width: 90%;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+.popular-listings h2 {
+  margin-bottom: 10px;
+}
+
+.listings {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.listings > div {
+  border-radius: 20px;
+  background: #9f9c9c;
+  width: 30%;
+  padding-bottom: 10px;
+}
+
+.listings > div > img {
+  width: 100%;
+  /* margin-bottom: 10px; */
+}
+
+.info {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bedrooms {
+  margin-top: 200px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.info p {
+  color: white;
+  margin: 8px;
+}
+
+.info-logo {
+  width: 40px;
+  vertical-align: middle;
+}
+
+.popular-listings button {
+  padding: 15px 30px;
+  border-radius: 20px;
+  background: #2e86ab;
+  border: none;
+  color: white;
+}
+
+/* Styles for the footer */
+
+footer {
+  background-color: black;
+  height: auto;
+  padding: 10px;
+  width: 100%;
+  color: white;
+}
+
+.footer-sections {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.commitment {
+  width: 500px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer li {
+  margin: 7px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #2e86ab;
+}
+
+.socials img {
+  /* display: flex; */
+  width: 40px;
+  margin: 10px;
+}
+
+/* Styles for the About Page */
+
+.about {
+  /* border-radius: 20px; */
+  background: rgba(0, 0, 0, 0.84);
+  width: 90%;
+  color: white;
+  margin: 5px auto;
+  padding: 20px 20px 20px 50px;
+}
+
+.about h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #2e86ab;
+}
+
+.about p {
+  width: 1200px;
+  font-size: 1.8rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 90%;
+}
+
+.stats span {
+  font-size: 2rem;
+  color: #2e86ab;
+}
+
+.mission {
+  width: 85%;
+  margin: 20px auto;
+}
+
+.mission h2 {
+  font-size: 1.8rem;
+  color: #2e86ab;
+}
+
+.mission p {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+/* Styles for the popular listings page */
+
+.listings-page {
+  background: #d9d9d9;
+}
+
+.listings-page h1 {
+  margin-left: 30px;
+}
+
+.search {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 95%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.search-box {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.search-box p {
+  color: #000;
+
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.search-box img {
+  width: 50px;
+}
+
+.houses {
+  width: 95%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.house {
+  background-color: #fff;
+  width: 80%;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.house > img {
+  width: 100%;
+}
+
+.house-info {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.left .naira {
+  width: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.dot {
+  width: 20px;
+  vertical-align: bottom;
+}
+
+.loc {
+  width: 30px;
+  vertical-align: middle;
+}
+
+/* Styles for the Sign Up form */
+
+form {
+  padding: 10px;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 15px;
+  width: 80%;
+  margin-top: 6px;
+  border-radius: 5px;
+}
+
+.submit {
+  padding: 10px 200px;
+  border: none;
+  border-radius: 10px;
+  background: #2e86ab;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
