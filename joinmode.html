@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Login</title>
+    <title>Document</title>
   </head>
   <body>
     <header>
@@ -23,26 +23,36 @@
 
         <div class="button">
           <button class="signup">
-            <a href="joinmode.html">Create Account</a>
+            <a href="CreateAccount.html">Create Account</a>
           </button>
         </div>
       </nav>
     </header>
 
     <main>
-      <form action="list.html">
-        <div class="input-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" required />
-        </div>
-        <div class="input-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" required />
-        </div>
-      </div>
+      <h1 style="padding: 10px">How would you love to join?</h1>
 
-      <button class="submit"> Login</button>
-    </form>
+      <div class="join">
+        <h2>Join as a renter</h2>
+
+        <p>
+          As a renter, you will be able to view and book spaces listed on
+          havenhubz, you can also register or find a roommate.
+        </p>
+
+        <button>
+          <a href="renterreg.html">Register</a>
+        </button>
+      </div>
+      <div class="join">
+        <h2>Join as a landlord</h2>
+
+        <p>
+          As a landlord, you will be able to list your properties on havenhubz.
+        </p>
+
+        <button><a href="landlordreg.html">Register</a></button>
+      </div>
     </main>
   </body>
 </html>
