@@ -540,3 +540,15 @@ input {
   text-decoration: none;
   color: black;
 }
+
+/* //Styles for the contact page */
+
+.send-message {
+  padding: 20px;
+  text-decoration: none;
+  background-color: #2e86ab;
+  color: white;
+  border: 1px solid black;
+  text-align: center;
+  width: 30%;
+}
